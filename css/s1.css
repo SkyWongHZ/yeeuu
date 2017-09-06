@@ -1,0 +1,868 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #111111;
+  background-color: rgba(17, 17, 17, 0.9);
+  z-index: 10; }
+  .navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .navbar .content {
+    width: 1106px;
+    margin: 0 auto;
+    height: 100%; }
+    .navbar .content .nav-item {
+      float: left;
+      height: 50px; }
+      .navbar .content .nav-item a {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.502);
+        font-size: 14px;
+        text-decoration: none;
+        padding: 2px 30px; }
+      .navbar .content .nav-item:last-child a {
+        border-right: none; }
+      .navbar .content .nav-item.active a {
+        color: #e60044; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: PingFangSC-Light, Helvetica Neue,Helvetica,Microsoft Microsoft YaHei UI Light,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif; }
+
+html, body {
+  width: 100%; }
+
+body {
+  min-width: 1260px;
+  min-height: 100%; }
+
+.tween {
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
+  transition: transform .5s linear;
+  transition: transform .5s linear, -webkit-transform .5s linear;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -20px; }
+
+.cell-view {
+  width: 100%;
+  margin: 0 auto; }
+  .cell-view .cell {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    .cell-view .cell .wrap {
+      width: 1260px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      overflow: hidden; }
+    .cell-view .cell img {
+      max-width: 100%;
+      background-repeat: no-repeat; }
+    .cell-view .cell .slogan {
+      font-family: FZLanTingHei-EL-GBK, PingFangSC-Light, Helvetica Neue,Helvetica,Microsoft Microsoft YaHei UI Light,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+      margin-bottom: 40px; }
+      .cell-view .cell .slogan h3 {
+        font-size: 40px;
+        font-weight: lighter; }
+    .cell-view .cell .desc {
+      font-size: 16px;
+      color: #777777; }
+      .cell-view .cell .desc p {
+        line-height: 1.5; }
+  .cell-view .cell-1 {
+    height: 900px;
+    background: #121212;
+    background-image: url("../images/s1/s101.jpg");
+    background-position: 48% 100%;
+    background-repeat: no-repeat; }
+    .cell-view .cell-1 .slogan {
+      margin-top: 100px;
+      font-size: 40px;
+      color: #fff;
+      width: 100%; }
+    .cell-view .cell-1 .desc span {
+      display: inline-block;
+      width: 150px;
+      border: 0 solid rgba(255, 255, 255, 0.2);
+      border-right-width: 1px;
+      font-size: 16px;
+      color: #858586; }
+      .cell-view .cell-1 .desc span:first-child {
+        border-left-width: 1px; }
+    .cell-view .cell-1 .play-btn {
+      margin-top: 170px; }
+      .cell-view .cell-1 .play-btn a {
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border: none;
+        width: 64px;
+        height: 64px;
+        background-image: url("../images/s1/play-btn.png");
+        cursor: pointer;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        z-index: 1; }
+        .cell-view .cell-1 .play-btn a:hover {
+          opacity: 0.5; }
+    .cell-view .cell-1 .img {
+      position: absolute;
+      top: initial;
+      left: 450px;
+      bottom: 0;
+      width: 642px;
+      height: 459px;
+      background-image: url("../images/s1/s101-1.png");
+      z-index: 0;
+      -webkit-animation: slideUp 1s;
+              animation: slideUp 1s; }
+
+@-webkit-keyframes slideUp {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes slideUp {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+  .cell-view .cell-2 {
+    height: 900px;
+    background: #fff; }
+    .cell-view .cell-2 .float-block {
+      position: absolute;
+      top: 300px;
+      left: 200px;
+      bottom: initial; }
+    .cell-view .cell-2 .slogan {
+      color: #444444; }
+    .cell-view .cell-2 .desc {
+      color: #444444; }
+    .cell-view .cell-2 .img {
+      position: absolute;
+      top: 160px;
+      left: 45%;
+      bottom: initial;
+      width: 543px;
+      height: 567px;
+      background-image: url("../images/s1/s102.png"); }
+  .cell-view .cell-3 {
+    height: 860px;
+    background: #121212; }
+    .cell-view .cell-3 .float-block {
+      position: absolute;
+      top: 315px;
+      left: 795px;
+      bottom: initial;
+      z-index: 2; }
+    .cell-view .cell-3 .showDesc {
+      opacity: 0;
+      -webkit-transition: opacity,ease-in, 3s;
+      transition: opacity,ease-in, 3s; }
+    .cell-view .cell-3 .slogan {
+      color: #fff;
+      text-align: left;
+      position: relative; }
+      .cell-view .cell-3 .slogan .line {
+        position: absolute;
+        width: 425px;
+        height: 1px;
+        background: #787676;
+        z-index: 5;
+        top: 70%;
+        left: -425px; }
+        .cell-view .cell-3 .slogan .line::after {
+          content: "";
+          position: absolute;
+          left: -48px;
+          top: -10px;
+          width: 50px;
+          height: 1px;
+          z-index: 5;
+          background: #787676;
+          -webkit-transform: rotate(25deg);
+                  transform: rotate(25deg); }
+    .cell-view .cell-3 .desc {
+      color: #797879;
+      text-align: left; }
+      .cell-view .cell-3 .desc .left-text {
+        margin-top: 20px;
+        text-align: left; }
+    .cell-view .cell-3 .img {
+      position: absolute;
+      top: 85px;
+      left: -60px;
+      bottom: initial;
+      width: 777px;
+      height: 677px;
+      background-image: url("../images/s1/s103.jpg"); }
+  .cell-view .cell-4 {
+    height: 960px;
+    -webkit-transition: background 1s ease;
+    transition: background 1s ease; }
+    .cell-view .cell-4.grey {
+      background: #595959; }
+      .cell-view .cell-4.grey .img {
+        background-image: url("../images/s1/04.png"); }
+      .cell-view .cell-4.grey .slogan, .cell-view .cell-4.grey .table, .cell-view .cell-4.grey .desc {
+        color: #fff; }
+      .cell-view .cell-4.grey .table td, .cell-view .cell-4.grey .table th {
+        border-color: #fff; }
+    .cell-view .cell-4.red {
+      background: #a33b3a; }
+      .cell-view .cell-4.red .img {
+        background-image: url("../images/s1/03.png"); }
+      .cell-view .cell-4.red .slogan, .cell-view .cell-4.red .table, .cell-view .cell-4.red .desc {
+        color: #fff; }
+      .cell-view .cell-4.red .table td, .cell-view .cell-4.red .table th {
+        border-color: #fff; }
+    .cell-view .cell-4.yellow {
+      background: #eacfb3; }
+      .cell-view .cell-4.yellow .img {
+        background-image: url("../images/s1/02.png"); }
+    .cell-view .cell-4.white {
+      background: #ebebeb; }
+      .cell-view .cell-4.white .img {
+        background-image: url("../images/s1/01.png"); }
+      .cell-view .cell-4.white .color-item.active {
+        border: 3px solid #b8b8b8 !important; }
+    .cell-view .cell-4 .float-block {
+      position: absolute;
+      top: 300px;
+      left: 700px;
+      bottom: initial; }
+    .cell-view .cell-4 .desc {
+      color: #797879; }
+    .cell-view .cell-4 .table {
+      color: #797879;
+      margin-top: 40px; }
+      .cell-view .cell-4 .table table {
+        width: 490px;
+        border-spacing: 0;
+        border-collapse: collapse; }
+        .cell-view .cell-4 .table table tr td, .cell-view .cell-4 .table table tr th {
+          font-weight: normal;
+          border: 1px solid #929292;
+          padding: 10px 15px; }
+    .cell-view .cell-4 .slogan, .cell-view .cell-4 .table, .cell-view .cell-4 .desc {
+      -webkit-transition: color 1s ease;
+      transition: color 1s ease; }
+    .cell-view .cell-4 .colors {
+      margin-top: 60px; }
+      .cell-view .cell-4 .colors .color-item {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin: 0 20px;
+        cursor: pointer;
+        border: 0 solid transparent; }
+        .cell-view .cell-4 .colors .color-item.active {
+          border: 3px solid #fff; }
+      .cell-view .cell-4 .colors .color-item-1 {
+        background: #ebebeb; }
+      .cell-view .cell-4 .colors .color-item-2 {
+        background: #d8c0a6; }
+      .cell-view .cell-4 .colors .color-item-3 {
+        background: #a91d24; }
+      .cell-view .cell-4 .colors .color-item-4 {
+        background: #2a2a2a; }
+    .cell-view .cell-4 .img {
+      position: absolute;
+      top: 140px;
+      left: 15%;
+      bottom: initial;
+      width: 402px;
+      height: 641px;
+      background-repeat: no-repeat; }
+  .cell-view .cell-5 {
+    height: 900px;
+    background-image: url("../images/s1/s105.jpg"); }
+    .cell-view .cell-5 .float-block {
+      position: absolute;
+      top: 250px;
+      left: 220px;
+      bottom: initial;
+      z-index: 2; }
+    .cell-view .cell-5 .img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      height: 780px;
+      z-index: 1; }
+    .cell-view .cell-5 .slogan {
+      color: #fff; }
+    .cell-view .cell-5 .desc {
+      color: #d9d8d6; }
+    .cell-view .cell-5 .feature {
+      width: 510px;
+      margin-top: 60px; }
+      .cell-view .cell-5 .feature::after {
+        content: "";
+        display: table;
+        height: 0;
+        clear: both; }
+      .cell-view .cell-5 .feature .feature-cell {
+        width: 33%;
+        float: left;
+        text-align: center; }
+        .cell-view .cell-5 .feature .feature-cell .icon {
+          width: 88px;
+          height: 88px;
+          margin: 0 auto; }
+        .cell-view .cell-5 .feature .feature-cell .feature-desc {
+          margin-top: 25px;
+          color: #fff; }
+      .cell-view .cell-5 .feature .feature-cell-1 .icon {
+        background-image: url("../images/s1/s105-1.png"); }
+      .cell-view .cell-5 .feature .feature-cell-2 .icon {
+        background-image: url("../images/s1/s105-2.png"); }
+      .cell-view .cell-5 .feature .feature-cell-3 .icon {
+        background-image: url("../images/s1/s105-3.png"); }
+    .cell-view .cell-5 .open-animation {
+      position: absolute;
+      bottom: 0;
+      right: 50px;
+      width: 409px;
+      height: 607px;
+      background-image: url("../images/s1/s105-4.png"); }
+      .cell-view .cell-5 .open-animation .open-gif {
+        position: absolute;
+        top: 65px;
+        left: 71px; }
+  .cell-view .cell-6 {
+    height: 900px; }
+    .cell-view .cell-6 .float-block {
+      position: absolute;
+      top: 180px;
+      left: 700px;
+      bottom: initial; }
+    .cell-view .cell-6 .feature {
+      padding-left: 65px; }
+      .cell-view .cell-6 .feature::after {
+        content: "";
+        display: table;
+        height: 0;
+        clear: both; }
+      .cell-view .cell-6 .feature .feature-cell {
+        height: 88px;
+        float: left;
+        text-align: left; }
+        .cell-view .cell-6 .feature .feature-cell::after {
+          content: "";
+          display: table;
+          height: 0;
+          clear: both; }
+      .cell-view .cell-6 .feature .feature-title {
+        padding-left: 128px;
+        font-size: 20px; }
+      .cell-view .cell-6 .feature .feature-desc {
+        margin-top: 10px;
+        color: #666666;
+        font-size: 16px;
+        line-height: 25px;
+        padding-left: 128px; }
+      .cell-view .cell-6 .feature .icon {
+        width: 88px;
+        height: 88px; }
+      .cell-view .cell-6 .feature .icon {
+        float: left; }
+      .cell-view .cell-6 .feature .feature-cell {
+        margin-top: 80px;
+        width: 100%; }
+      .cell-view .cell-6 .feature .feature-cell-1 .icon {
+        background-image: url("../images/s1/106-icon-1.png"); }
+      .cell-view .cell-6 .feature .feature-cell-2 {
+        margin-top: 40px; }
+        .cell-view .cell-6 .feature .feature-cell-2 .icon {
+          background-image: url("../images/s1/106-icon-2.png"); }
+    .cell-view .cell-6 .img {
+      position: absolute;
+      top: 160px;
+      left: 327px;
+      bottom: initial;
+      width: 273px;
+      height: 550px;
+      background-image: url("../images/s1/s106.png"); }
+  .cell-view .cell-6 .img {
+    width: 392px;
+    height: 591px;
+    left: 250px; }
+  .cell-view .cell-7 {
+    height: 860px;
+    background-image: url("../images/s1/s107.jpg"); }
+    .cell-view .cell-7 .float-block {
+      position: absolute;
+      top: 300px;
+      left: 230px;
+      bottom: initial;
+      z-index: 2; }
+    .cell-view .cell-7 .img {
+      position: absolute;
+      top: 150px;
+      left: 60%;
+      bottom: initial;
+      width: 282px;
+      height: 573px;
+      background-image: url("../images/s1/t107-1.png"); }
+  .cell-view .cell-8 {
+    height: 820px; }
+    .cell-view .cell-8 .float-block {
+      margin-top: 175px; }
+    .cell-view .cell-8 .img {
+      margin: 56px auto;
+      width: 864px;
+      height: 249px;
+      background-image: url("../images/s1/t108.png"); }
+  .cell-view .cell-9 {
+    height: 1480px;
+    background: #121212; }
+    .cell-view .cell-9 .slogan {
+      margin-top: 130px;
+      color: #fff; }
+    .cell-view .cell-9 .feature {
+      width: 94%;
+      margin-left: 3%;
+      height: 80px; }
+      .cell-view .cell-9 .feature .feature-cell {
+        width: 25%;
+        height: 80px;
+        float: left;
+        border-right: 1px solid #797879; }
+        .cell-view .cell-9 .feature .feature-cell:last-child {
+          border-right: none; }
+        .cell-view .cell-9 .feature .feature-cell .feature-title {
+          font-size: 30px;
+          color: #e60044; }
+        .cell-view .cell-9 .feature .feature-cell .feature-desc {
+          font-size: 16px;
+          color: #999;
+          line-height: 60px; }
+    .cell-view .cell-9 .img {
+      position: relative;
+      margin: 120px auto;
+      width: 677px;
+      height: 892px;
+      background-image: url("../images/s1/s109.png"); }
+      .cell-view .cell-9 .img .feature-tip-1 {
+        top: 10px;
+        left: 380px; }
+      .cell-view .cell-9 .img .feature-tip-2 {
+        top: 130px;
+        left: 325px; }
+      .cell-view .cell-9 .img .feature-tip-3 {
+        top: 655px;
+        left: 95px; }
+      .cell-view .cell-9 .img .feature-tip {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        background-image: url("../images/s1/tip.png");
+        -webkit-transition: all .2s ease-out;
+        transition: all .2s ease-out; }
+        .cell-view .cell-9 .img .feature-tip.active {
+          -webkit-transform: rotate(135deg);
+                  transform: rotate(135deg); }
+      .cell-view .cell-9 .img .tip-text {
+        position: absolute;
+        line-height: 30px;
+        padding: 12px 24px;
+        background: rgba(68, 68, 68, 0.5);
+        color: #fff;
+        border-radius: 8px;
+        white-space: nowrap;
+        opacity: 0;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease; }
+        .cell-view .cell-9 .img .tip-text.show {
+          opacity: 1; }

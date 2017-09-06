@@ -1,0 +1,55 @@
+footer {
+  background-color: #111111;
+  width: 100%;
+  position: static;
+  bottom: 0;
+  height: 232px;
+  padding: 30px 0 40px 0; }
+  footer .content {
+    width: 1106px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    line-height: 1; }
+    footer .content .qrcode-block {
+      width: 100px;
+      float: right;
+      text-align: center; }
+      footer .content .qrcode-block .qrcode {
+        width: 100px;
+        height: 100px;
+        border: solid 1px #fff;
+        margin-bottom: 10px; }
+      footer .content .qrcode-block span {
+        color: #909090;
+        font-size: 12px; }
+    footer .content .note {
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      font-size: 12px;
+      color: #909090; }
+    footer .content .label {
+      color: #909090;
+      font-size: 14px; }
+    footer .content .email-block {
+      margin-top: 20px; }
+      footer .content .email-block .email a {
+        font-size: 14px;
+        color: #909090;
+        text-decoration: none; }
+    footer .content .phone-block p {
+      margin-bottom: 20px; }
+    footer .content .phone-block .phone {
+      min-width: 150px;
+      color: #d0d0d0;
+      font-size: 16px;
+      display: inline-block;
+      vertical-align: top; }
+    footer .content .phone-block .work-time {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+      color: #818181;
+      margin-left: 24px; }

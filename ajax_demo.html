@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <button id="realTest">
+        mock数据测试
+    </button>
+    <a href="http:www.baidu.com">年后</a>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        var serverUrl='https://easy-mock.com/mock/59aa05bce0dc66334199215b/example';
+        $('#realTest').on('click',function(){
+            $.ajax({
+                url: serverUrl+'/upload',
+                type: "post",
+//                data:{userBank:userBank,userName:userName,userAccount:userAccount},
+                success: function (res) {
+                    console.log(res)
+                    console.log(res.data.img)
+                },
+                error: function (error) {
+                    console.log(222)
+                }
+            });
+        });
+    </script>
 </body>
 </html>

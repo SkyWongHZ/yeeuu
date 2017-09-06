@@ -1,0 +1,95 @@
+header {
+    background-color: #111111;
+    background-color: rgba(17, 17, 17, 0.9);
+    height: 60px;
+    position: relative; }
+header .content {
+    width: 1106px;
+    margin: 0 auto;
+    height: 100%; }
+header .content .logo {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer; }
+header .content .nav-menu {
+    float: right;
+    display: inline-block;
+    height: 100%; }
+header .content .nav-menu .nav-item-wrapper {
+    display: inline-block;
+    height: 100%;
+    line-height: 60px;
+    margin-left: 56px;
+    text-align: right; }
+header .content .nav-menu .nav-item-wrapper:hover .subheader {
+    display: block;
+    height: 240px; }
+header .content .nav-menu .nav-item {
+    display: block;
+    color: #bebebe;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none; }
+
+
+
+header .content .nav-menu .nav-item:hover {
+    color: #fff; }
+header .content .nav-menu .nav-item.active {
+    color: #e60044; }
+header .subheader {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 0;
+    z-index: 15;
+    -webkit-transition: height 0.3s;
+    transition: height 0.3s;
+    overflow: hidden;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.18); }
+header .subheader .subheader-content {
+    width: 1106px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+    padding: 20px 0;
+    height: 100%;
+    position: relative; }
+header .subheader .subheader-content .item {
+    float: left;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 20%;
+    text-align: center;
+    color: gray;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    font-size: 14px;
+    position: relative; }
+header .subheader .subheader-content .item:before {
+    position: absolute;
+    right: 1px;
+    top: 20px;
+    width: 1px;
+    height: 140px;
+    border-right: solid 1px #e8e8e8;
+    content: ""; }
+header .subheader .subheader-content .item .img-wrapper {
+    width: 100%;
+    min-height: 145px; }
+header .subheader .subheader-content .item:last-of-type:before {
+    opacity: 0; }
+header .subheader#productsSubheader .img-wrapper img {
+    width: 100%;
+    height: 100%; }
+header .subheader#projectSubheader .subheader-content .item:before {
+    opacity: 0; }
